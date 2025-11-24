@@ -16,7 +16,7 @@ const ITEMS_PER_PAGE = 12;
 export const ProductListPage: React.FC<ProductListPageProps> = ({ onProductClick }) => {
   const { filters, setCurrentPage, getFilteredProducts } = useStore();
   
-  // 获取过滤后的商品
+  // 商品
   const filteredProducts = useMemo(() => getFilteredProducts(), [
     filters.activeCategory, 
     filters.activeMood, 
@@ -33,7 +33,6 @@ export const ProductListPage: React.FC<ProductListPageProps> = ({ onProductClick
 
   return (
     <>
-      {/* 筛选栏 */}
       <FilterBar />
 
       {/* 商品网格 */}

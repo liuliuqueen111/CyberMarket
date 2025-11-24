@@ -27,7 +27,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-200 font-sans selection:bg-cyan-500/30 selection:text-cyan-200 overflow-x-hidden">
-      {/* 背景装饰 */}
       <BackgroundDecoration />
 
       {/* 导航栏 */}
@@ -36,7 +35,6 @@ function App() {
         onLogoClick={handleBackToList}
       />
 
-      {/* 主内容区 */}
       <main className="relative z-10 max-w-7xl mx-auto px-4 py-8">
         {view === 'list' && (
           <ProductListPage onProductClick={handleProductClick} />
@@ -50,7 +48,7 @@ function App() {
         )}
       </main>
 
-      {/* 购物车抽屉 */}
+      {/* 购物车*/}
       <CartDrawer 
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}

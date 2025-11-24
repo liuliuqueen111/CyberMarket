@@ -1,4 +1,4 @@
-// 商品详情页组件
+// 商品详情
 import React from 'react';
 import { ChevronLeft, ShoppingCart, Cpu, Heart } from 'lucide-react';
 import type { Product } from '../../types';
@@ -30,10 +30,9 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ product, o
       
       {/* 详情内容 */}
       <div className="grid md:grid-cols-2 gap-12 bg-slate-800/30 border border-white/10 rounded-2xl p-8 backdrop-blur-sm relative overflow-hidden">
-        {/* 装饰背景 */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-b from-cyan-500/5 to-transparent rounded-full blur-3xl -z-10"></div>
         
-        {/* 左侧：产品展示 */}
+        {/* 产品展示 */}
         <div className="flex items-center justify-center bg-slate-900/50 rounded-xl border border-slate-700/50 aspect-square relative group">
           {React.createElement(product.image, { className: "w-48 h-48 text-slate-300 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] group-hover:drop-shadow-[0_0_30px_rgba(34,211,238,0.4)] transition-all duration-500" })}
           <div className="absolute bottom-4 w-full px-8 flex justify-between text-xs font-mono text-slate-600">
@@ -49,7 +48,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ product, o
           )}
         </div>
 
-        {/* 右侧：详细信息 */}
+        {/* 详细信息 */}
         <div className="space-y-6">
           {/* 标签 */}
           <div>
@@ -135,7 +134,6 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ product, o
         </div>
       </div>
 
-      {/* 动画样式 */}
       <style>{`
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(10px); }

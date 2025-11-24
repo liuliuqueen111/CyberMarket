@@ -13,7 +13,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose }) => {
   const { cart, removeFromCart, updateQuantity, getCartTotal, products } = useStore();
   const cartTotal = getCartTotal();
   
-  // 获取完整产品信息（包括图标）
+  // 获取完整产品信息
   const getProductById = (id: number) => products.find(p => p.id === id);
 
   return (

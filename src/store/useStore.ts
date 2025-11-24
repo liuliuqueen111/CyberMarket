@@ -59,7 +59,7 @@ export const useStore = create<StoreState>()(
               )
             };
           }
-          // 排除 image 字段以避免序列化问题
+          // 排除 image 字段
           const { image, ...productWithoutImage } = product;
           return {
             cart: [...state.cart, { ...productWithoutImage, quantity: 1, specs } as CartItem]

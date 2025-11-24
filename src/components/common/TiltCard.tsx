@@ -1,4 +1,4 @@
-// 3D 倾斜卡片组件 - 增加交互性
+// 卡片组件
 import React, { useRef, useState } from 'react';
 
 interface TiltCardProps {

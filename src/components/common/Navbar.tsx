@@ -15,7 +15,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onCartOpen, onLogoClick }) => {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-md border-b border-white/10 bg-slate-900/80">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
         <div 
           className="flex items-center gap-2 cursor-pointer group" 
           onClick={onLogoClick}
@@ -42,7 +41,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onCartOpen, onLogoClick }) => {
           </div>
         </div>
 
-        {/* 购物车图标 */}
         <div className="flex items-center gap-4">
           <button 
             className="relative p-2 hover:bg-white/5 rounded-full transition-colors group"

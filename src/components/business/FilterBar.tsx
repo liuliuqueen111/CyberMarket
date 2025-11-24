@@ -53,7 +53,7 @@ export const FilterBar: React.FC = () => {
           ))}
         </div>
 
-        {/* 情绪/场景 Filter */}
+        {/* 场景 Filter */}
         <div className="flex flex-wrap gap-2">
           <span className="text-xs uppercase tracking-widest text-slate-500 py-1.5 mr-2 self-center">
             Mood //
